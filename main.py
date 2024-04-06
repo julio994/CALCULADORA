@@ -15,7 +15,7 @@ while(continuar):
         resultado = suma(numeroDos,numeroDos)
         print(f"{numeroUno}+{numeroDos}={resultado}")
     elif(opc == "2"):
-        print("Calculadora cerrada.")
+        print("Calculadora cerrada...")
         continuar = False
     else:
         print("opción incorrecta")
