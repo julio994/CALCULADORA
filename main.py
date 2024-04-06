@@ -10,9 +10,15 @@ while(continuar):
 
     opc = input("")
     if(opc == "1"):
-        numeroUno = int(input("ingrese el primer numero: "))
-        numeroDos = int(input("ingrese el segundo numero: "))
-        resultado = suma(numeroDos,numeroDos)
+        numeroUno = 0
+        numeroDos = 0
+        resultado = 0
+        while(True):
+            numeroUno = input("ingrese el primer numero: ")
+            numeroDos = input("ingrese el segundo numero: ")
+            resultado = suma(numeroUno,numeroDos)
+            if(resultado != None):
+                break
         print(f"{numeroUno}+{numeroDos}={resultado}")
     elif(opc == "2"):
         print("Calculadora cerrada...")
